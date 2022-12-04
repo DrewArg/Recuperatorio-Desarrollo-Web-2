@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @media (max-width: 576px) {
   .body {
-    background-image: url("../img/puenteBosque.jpg");
+    background-image: url("../assets/puente-bosque.jpg");
     background-size: cover;
     color: #f4f4f2;
     padding: 0px;
@@ -418,7 +418,7 @@ button:hover {
 }
 
 .icono {
-  background: url("../img/carritoDeCompras.png") no-repeat 50% 50%;
+  background: url("../assets/carrito-de-compras.png") no-repeat 50% 50%;
   background-size: 28px 28px;
   display: inline-block;
   height: 28px;
@@ -641,7 +641,7 @@ h1 {
 
 @media (min-width: 577px) and (max-width: 991px) {
   .body {
-    background-image: url("../img/puenteBosque.jpg");
+    background-image: url("../assets/puente-bosque.jpg");
     background-size: cover;
     color: #f4f4f2;
     padding: 0px;
@@ -1058,7 +1058,7 @@ button:hover {
 }
 
 .icono {
-  background: url("../img/carritoDeCompras.png") no-repeat 50% 50%;
+  background: url("../assets/carrito-de-compras.png") no-repeat 50% 50%;
   background-size: 28px 28px;
   display: inline-block;
   height: 28px;
@@ -1285,7 +1285,7 @@ h1 {
 
 @media (min-width: 992px) {
   .body {
-    background-image: url("../img/puenteBosque.jpg");
+    background-image: url("../assets/puente-bosque.jpg");
     background-size: cover;
     color: #f4f4f2;
     padding: 0px;
@@ -1702,7 +1702,7 @@ button:hover {
 }
 
 .icono {
-  background: url("../img/carritoDeCompras.png") no-repeat 50% 50%;
+  background: url("../assets/carrito-de-compras.png") no-repeat 50% 50%;
   background-size: 28px 28px;
   display: inline-block;
   height: 28px;

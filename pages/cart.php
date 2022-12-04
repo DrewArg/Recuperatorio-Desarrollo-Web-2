@@ -28,8 +28,8 @@ require('../layout/_constants.php');
             </div>
 
     </main>
-    <?php require('../layout/_jsScripts.php') ?>
     <?php require('../layout/_footer.php') ?>
+    <?php require('../layout/_jsScripts.php') ?>
 </body>
 
 </html>

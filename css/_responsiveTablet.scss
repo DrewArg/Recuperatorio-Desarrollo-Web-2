@@ -2,7 +2,7 @@
 
 @media (min-width: 577px) and (max-width: 991px) {
     .body {
-        background-image: url("../img/puenteBosque.jpg");
+        background-image: url("../assets/puente-bosque.jpg");
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -478,7 +478,7 @@ button {
 }
 
 .icono {
-    background: url("../img/carritoDeCompras.png") no-repeat 50% 50%;
+    background: url("../assets/carrito-de-compras.png") no-repeat 50% 50%;
     background-size: 28px 28px;
     display: inline-block;
     height: 28px;

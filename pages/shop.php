@@ -6,34 +6,57 @@ require('../layout/_constants.php');
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Tu Carrito</title>
+    <?php require('../layout/_metaTags.php') ?>
+    <?php require('../layout/_styleSheet.php') ?>
+    <title>Tienda de Cartas</title>
 </head>
 
 <body class="body">
     <?php require('../layout/_header.php') ?>
+
     <main>
-
-        <div class="carritoUsuario">
-
-            <h2 id="tituloCambiante"></h2>
+        <div class="titulo__tienda">
+            <h2 id="tituloCambiante"">Tienda</h2>
             <div class=" titulo__subtitulo">
+                <p>Aquí podrás comprar nuevas cartas y/o mazos.</p>
+        </div>
 
 
-                <div class="informacionCarrito">
+        <div class="filtro">
+            <div class="filtro__nombre">
+                <h3>¿Búscas alguna carta en particular?</h4>
 
-                </div>
-
+                    <div class="filtro__nombre--busqueda">
+                        <input type="search" id="cartaBuscada" placeholder="Nombre de la carta">
+                        <button id="btnNombre">Buscar</button>
+                    </div>
             </div>
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-            <script src="../script/clases.js"></script>
-            <script src="../script/funcionesGenerales.js"></script>
-            <script src="../script/carrito.js"></script>
-            <script src="../script/carritoUsuario.js"></script>
+
+            <div class="filtro__tipo">
+                <h3>¿Algún tipo en particular?</h3>
+                <label for="tipoCarta"></label>
+                <select name="tipoCarta" id="tipoCarta">
+                    <option value="Todos">Todos</option>
+                    <option value="Alimento">Alimento</option>
+                    <option value="Animal">Animal</option>
+                    <option value="Habilidad">Habilidad</option>
+                    <option value="Habitat">Hábitat</option>
+                </select>
+                <button id="btnTipo">Buscar</button>
+            </div>
+
+            <div>
+                <button id="btnRefresh">Reiniciar Filtros</button>
+            </div>
+        </div>
+
+        <div class="carta">
+
+        </div>
     </main>
+    <?php require('../layout/_footer.php') ?>
+    <?php require('../layout/_jsScripts.php') ?>
+
 </body>
 
 </html>
