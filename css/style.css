@@ -1933,4 +1933,8 @@ h1 {
 .mensajeCompraRealizada {
   margin: 2rem;
   font-size: 2rem;
+}
+
+.underlined {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
