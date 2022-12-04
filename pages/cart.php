@@ -6,10 +6,8 @@ require('../layout/_constants.php');
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <?php require('../layout/_metaTags.php') ?>
+    <?php require('../layout/_styleSheet.php') ?>
     <title>Tu Carrito</title>
 </head>
 
@@ -28,12 +26,10 @@ require('../layout/_constants.php');
                 </div>
 
             </div>
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-            <script src="../script/clases.js"></script>
-            <script src="../script/funcionesGenerales.js"></script>
-            <script src="../script/carrito.js"></script>
-            <script src="../script/carritoUsuario.js"></script>
+
     </main>
+    <?php require('../layout/_jsScripts.php') ?>
+    <?php require('../layout/_footer.php') ?>
 </body>
 
 </html>
