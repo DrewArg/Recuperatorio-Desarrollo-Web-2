@@ -3,6 +3,7 @@ require('../layout/_constants.php');
 require_once('../functions/func_queries.php');
 
 $cards = getCards($connection);
+
 ?>
 
 <!DOCTYPE html>
@@ -52,24 +53,27 @@ $cards = getCards($connection);
                 <button id="btnRefresh">Reiniciar Filtros</button>
             </div>
         </div>
-        <?php
-        foreach ($cards as $card) :
-        ?>
-            <div class="carta">
+        <div class="carta">
+            <?php
+            foreach ($cards as $card) :
+            ?>
+
                 <div class="carta__contorno<?php echo $card['tipo'] ?>" id="tipo<?php echo $card['id'] ?>">
                     <div class="carta__superior">
                         <div class="carta__superior--tipo" id="tipoCarta<?php echo $card['id'] ?>">
-                            <?php echo $card['tipo'] ?>
+                            [<?php echo $card['tipo'] ?>]
                         </div>
                         <div class="carta__cartaReal">
-                            <div class="carta__medio">
-                                <div class="carta__medio--nombre" id="nombreCarta<?php echo $card['id'] ?>">
-                                    <?php echo $card['nombre'] ?>
+                            <a href="www.google.com" target="_blank">
+                                <div class="carta__medio">
+                                    <div class="carta__medio--nombre" id="nombreCarta<?php echo $card['id'] ?>">
+                                        <?php echo $card['nombre'] ?>
+                                    </div>
+                                    <div class="carta__medio--imagen" id="imagenCarta<?php echo $card['id'] ?>">
+                                        <img src="../assets/<?php echo $card['imagen'] ?>">
+                                    </div>
                                 </div>
-                                <div class="carta__medio--imagen" id="imagenCarta<?php echo $card['id'] ?>">
-                                    <img src="../assets/<?php echo $card['imagen'] ?>">
-                                </div>
-                            </div>
+                            </a>
                             <div class="carta__inferior">
                                 <div class="carta__inferior--efecto" id="efectoCarta<?php echo $card['id'] ?>">
                                     <p>
@@ -82,24 +86,27 @@ $cards = getCards($connection);
 
                             </div>
                             <div class="carta__precio">
-                                <form action="POST">
-                                    <span>AR$<?php echo $card['precio'] ?></span>
-                                    <input type="submit" id="btnMenos<?php echo $card['id'] ?>" class="btnMenos" name="btnMenos" value="-">
-                                    <span class="cantidadRequerida" id="cantidadRequerida<?php echo $card['id'] ?>">0</span>
-                                    <input type="submit" id="btnMas<?php echo $card['id'] ?>" class="btnMas" name="btnMas" value="+">
-                                </form>
-                            </div>
 
+                                <span>AR$<?php echo $card['precio'] ?></span>
+                                <button id="btnMenos<?php echo $card['id'] ?>" class="btnMenos" name="btnMenos" onclick="substractOne(<?php echo $card['id'] ?>)">-</button>
+                                <span class="cantidadRequerida" id="cantidadRequerida<?php echo $card['id'] ?>">0</span>
+                                <button type="submit" id="btnMas<?php echo $card['id'] ?>" class="btnMas" name="btnMas" onclick="addOne(<?php echo $card['id'] ?>)">+</button>
+                                <button type="submit" id="btnCheck<?php echo $card['id'] ?>" id="btnCheck<?php echo $card['id'] ?>" class="btnCheck">✔</button>
+
+                            </div>
                         </div>
+
 
                     </div>
                 </div>
-            </div>
-        <?php endforeach ?>
+
+            <?php endforeach ?>
+        </div>
+
     </main>
     <?php require('../layout/_footer.php') ?>
     <?php require('../layout/_jsScripts.php') ?>
-    <script src="<?php echo BASE_URL ?>js/productos/list-productos.js"></script>
+    <script src="<?php echo BASE_URL ?>/js/cards/cardList.js"></script>
 
 </body>
 

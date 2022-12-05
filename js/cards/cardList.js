@@ -1,18 +1,13 @@
-const btn_delete = document.querySelectorAll('.btn-delete');
 
-btn_delete.forEach( (item) => {
+function addOne(id) {
+    let currValue = document.getElementById(`cantidadRequerida${id}`)
+    currValue.textContent = parseInt(currValue.textContent) + 1
+}
 
-    item.addEventListener('click', (e) => {
+function substractOne(id) {
+    let currValue = document.getElementById(`cantidadRequerida${id}`)
+    if (currValue.textContent != 0) {
+        currValue.textContent = parseInt(currValue.textContent) - 1
+    }
+}
 
-        e.preventDefault();
-
-        let seguro = confirm('Está segura/o que desea eliminar este producto?');
-
-        if(seguro)
-        {
-            location.href = item.href;
-        }
-
-    });
-
-} );
