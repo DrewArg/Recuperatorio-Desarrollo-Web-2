@@ -1,9 +1,9 @@
 <?php
 require('./layout/_constants.php');
 
-if (array_key_exists('ir_reglamento', $_POST)) {
+if (array_key_exists('go_rules', $_POST)) {
     goToRules();
-} else if (array_key_exists('ir_tienda', $_POST)) {
+} else if (array_key_exists('go_shop', $_POST)) {
     goToShop();
 }
 function goToRules()
@@ -39,8 +39,8 @@ function goToShop()
 
     <main>
         <div class="titulo" id="tituloHome">
-            <h1 class="titulo__h2">Recuperatiorio TP N°1 y TP N°2 </h1>
-            <div>
+            <h1 class="titulo__h2">Recuperatorio TP N°1 y TP N°2 </h1>
+            <div class="ficha__index">
                 <p>
                     Alumno: Andrés Ezequiel Fabbiano
                 </p>
@@ -64,8 +64,8 @@ function goToShop()
             <p class="titulo__subtitulo">¿Querés saber más?</p>
 
             <form method="POST">
-                <input type="submit" name="ir_reglamento" value="Leer el Relgamento" />
-                <input type="submit" name="ir_tienda" value="Ir de Compras" />
+                <input type="submit" name="go_rules" value="Leer el Relgamento" />
+                <input type="submit" name="go_shop" value="Ir de Compras" />
             </form>
 
         </div>

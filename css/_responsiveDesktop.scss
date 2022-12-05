@@ -16,6 +16,8 @@
     }
 
     .titulo__tienda {
+        background-color: rgba(0, 0, 0, 0.6);
+
         &__h1 {
             font-size: $FontSize-Title-Desktop;
             text-align: center;
@@ -139,7 +141,7 @@
             height: 400px;
             align-items: center;
             justify-content: center;
-            border-radius: 10px;    
+            border-radius: 10px;
             padding: 0.4rem;
         }
 
@@ -708,7 +710,7 @@ h1 {
     font-size: 1.2rem;
 }
 
-.mensajeCompraRealizada{
+.mensajeCompraRealizada {
     margin: 2rem;
     font-size: 2rem;
 }
