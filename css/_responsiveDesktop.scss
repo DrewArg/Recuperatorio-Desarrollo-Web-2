@@ -246,11 +246,16 @@
             padding-right: 1.3rem;
             padding-top: 0.5rem;
 
+            &--alimentos {
+                text-align: left;
+                width: 85%;
+                height: 10%;
+            }
+
             &--efecto {
                 text-align: left;
-
                 width: 85%;
-                height: 100%;
+                height: 90%;
             }
         }
 

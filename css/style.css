@@ -1493,10 +1493,15 @@ h4 {
     padding-right: 1.3rem;
     padding-top: 0.5rem;
   }
+  .carta__inferior--alimentos {
+    text-align: left;
+    width: 85%;
+    height: 10%;
+  }
   .carta__inferior--efecto {
     text-align: left;
     width: 85%;
-    height: 100%;
+    height: 90%;
   }
   .carta__precio {
     background-color: #9ea2ad;
