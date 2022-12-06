@@ -2031,4 +2031,54 @@ input[type=submit]:hover {
   background-color: rgb(223, 240, 197);
   color: black;
   cursor: pointer;
+}
+
+.paginationContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.paginationContainer ul {
+  text-decoration: none;
+}
+.paginationContainer li {
+  text-decoration: none;
+  list-style: none;
+  padding: 1rem;
+  background-color: rgb(142, 189, 149);
+  color: rgb(0, 0, 0);
+}
+.paginationContainer li:hover {
+  background-color: rgb(53, 170, 68);
+  color: white;
+  cursor: pointer;
+}
+.paginationContainer li.pagination__active {
+  background-color: rgb(25, 135, 40);
+  color: white;
+}
+.paginationContainer li.pagination__active:hover {
+  background-color: rgb(21, 90, 30);
+  color: white;
+  cursor: pointer;
+}
+.paginationContainer li.pagination__limit {
+  background-color: rgb(209, 227, 211);
+  color: black;
+}
+.paginationContainer li.pagination__limit:hover {
+  background-color: rgb(124, 219, 137);
+  color: white;
+  cursor: pointer;
+}
+.paginationContainer a {
+  color: white;
+  text-decoration: none;
+}
+.paginationContainer a.limit {
+  color: black;
+}
+
+a {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

@@ -96,3 +96,60 @@ input[type="submit"] {
         cursor: pointer;
     }
 }
+
+.paginationContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    & ul {
+        text-decoration: none;
+    }
+
+    & li {
+        text-decoration: none;
+        list-style: none;
+        padding: 1rem;
+
+        background-color: rgb(142, 189, 149);
+        color: rgb(0, 0, 0);
+
+        &:hover {
+            background-color: rgb(53, 170, 68);
+            color: white;
+            cursor: pointer;
+        }
+
+        &.pagination__active {
+            background-color: rgb(25, 135, 40);
+            color: white;
+            &:hover {
+                background-color: rgb(21, 90, 30);
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+        &.pagination__limit {
+            background-color: rgb(209, 227, 211);
+            color: black;
+            &:hover {
+                background-color: rgb(124, 219, 137);
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+    & a {
+        color: white;
+        text-decoration: none;
+
+        &.limit {
+            color: black;
+        }
+    }
+}
+
+a{
+    color: white;
+}
