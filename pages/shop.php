@@ -35,7 +35,7 @@ $cards = getCards($connection);
                             [<?php echo $card['tipo'] ?>]
                         </div>
                         <div class="carta__cartaReal">
-                            <a href="www.google.com" target="_blank">
+                            <a href="<?php echo BASE_URL; ?>/pages/card_info.php?id=<?php echo $card['id']; ?>">
                                 <div class="carta__medio">
                                     <div class="carta__medio--nombre" id="nombreCarta<?php echo $card['id'] ?>">
                                         <?php echo $card['nombre'] ?>

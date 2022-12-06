@@ -71,7 +71,6 @@ function goToShop()
     </main>
 
     <?php require('./layout/_footer.php') ?>
-    <?php require('./layout/_jsScripts.php') ?>
 </body>
 
 </html>

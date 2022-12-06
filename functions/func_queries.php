@@ -40,18 +40,14 @@ function getCards(PDO $connection)
     return $cards;
 }
 
-// function getProductoById(PDO $conexion, $id)
-// {
-//     $consulta = $conexion->prepare('
-//         SELECT id, nombre, descripcion, precio, categoria_id, imagen
-//         FROM productos
-//         WHERE id = :id
-//     ');
-//     $consulta->bindValue(':id', $id);
-//     $consulta->execute();
-//     $producto = $consulta->fetch(PDO::FETCH_ASSOC);
-//     return $producto;
-// }
+function getCardById(PDO $connection, $id)
+{
+    $query = $connection->prepare('SELECT * FROM cartas WHERE id = :id');
+    $query->bindValue(':id', $id);
+    $query->execute();
+    $card = $query->fetch(PDO::FETCH_ASSOC);
+    return $card;
+}
 
 // function updateProducto(PDO $conexion, $id, $data)
 // {
