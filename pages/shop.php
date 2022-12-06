@@ -68,7 +68,6 @@ $cards = getCards($connection);
 
     </main>
     <?php require('../layout/_footer.php') ?>
-    <?php require('../layout/_jsScripts.php') ?>
     <script src="<?php echo BASE_URL ?>/js/cards/cardList.js"></script>
 
 </body>

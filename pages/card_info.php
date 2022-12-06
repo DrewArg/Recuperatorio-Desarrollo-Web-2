@@ -27,7 +27,6 @@ require('../layout/_constants.php');
 
     </main>
     <?php require('../layout/_footer.php') ?>
-    <?php require('../layout/_jsScripts.php') ?>
 </body>
 
 </html>
