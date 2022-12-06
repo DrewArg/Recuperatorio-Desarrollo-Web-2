@@ -24,35 +24,6 @@ $cards = getCards($connection);
             <div class=" titulo__subtitulo">
                 <p>Aquí podrás comprar nuevas cartas y/o mazos.</p>
         </div>
-
-
-        <div class="filtro">
-            <div class="filtro__nombre">
-                <h2>¿Búscas alguna carta en particular?</h2>
-
-                <div class="filtro__nombre--busqueda">
-                    <input type="search" id="cartaBuscada" placeholder="Nombre de la carta">
-                    <button id="btnNombre">Buscar</button>
-                </div>
-            </div>
-
-            <div class="filtro__tipo">
-                <h2>¿Algún tipo en particular?</h2>
-                <label for="tipoCarta"></label>
-                <select name="tipoCarta" id="tipoCarta">
-                    <option value="Todos">Todos</option>
-                    <option value="Alimento">Alimento</option>
-                    <option value="Animal">Animal</option>
-                    <option value="Habilidad">Habilidad</option>
-                    <option value="Habitat">Hábitat</option>
-                </select>
-                <button id="btnTipo">Buscar</button>
-            </div>
-
-            <div>
-                <button id="btnRefresh">Reiniciar Filtros</button>
-            </div>
-        </div>
         <div class="carta">
             <?php
             foreach ($cards as $card) :
@@ -86,17 +57,9 @@ $cards = getCards($connection);
 
                             </div>
                             <div class="carta__precio">
-
                                 <span>AR$<?php echo $card['precio'] ?></span>
-                                <button id="btnMenos<?php echo $card['id'] ?>" class="btnMenos" name="btnMenos" onclick="substractOne(<?php echo $card['id'] ?>)">-</button>
-                                <span class="cantidadRequerida" id="cantidadRequerida<?php echo $card['id'] ?>">0</span>
-                                <button type="submit" id="btnMas<?php echo $card['id'] ?>" class="btnMas" name="btnMas" onclick="addOne(<?php echo $card['id'] ?>)">+</button>
-                                <button type="submit" id="btnCheck<?php echo $card['id'] ?>" id="btnCheck<?php echo $card['id'] ?>" class="btnCheck">✔</button>
-
                             </div>
                         </div>
-
-
                     </div>
                 </div>
 

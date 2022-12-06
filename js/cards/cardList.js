@@ -10,4 +10,3 @@ function substractOne(id) {
         currValue.textContent = parseInt(currValue.textContent) - 1
     }
 }
-
