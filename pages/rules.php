@@ -17,8 +17,8 @@ require('../layout/_constants.php');
 
     <main>
         <div class="reglamento">
-            <h2>Reglamento</h2>
-            <h3>Notas Versión Actual</h3>
+            <h1>Reglamento</h1>
+            <h2>Notas Versión Actual</h2>
             <div>
                 <p>En esta versión se podrán jugar todos los tipos de cartas y se podrán activar todos los efectos.
                     Todas
@@ -26,7 +26,7 @@ require('../layout/_constants.php');
                     cartas sirven para algo en especial y funcionan correctamente.</p>
             </div>
 
-            <h3>Tablero de Juego</h3>
+            <h2>Tablero de Juego</h2>
             <div>
                 <p>El área de juego es el lugar en donde se ubicarán las cartas para desarrollar la batalla. Cada carta
                     que
@@ -37,7 +37,7 @@ require('../layout/_constants.php');
                     enemigo podrá ver sus especificaciones en su turno.</p>
             </div>
 
-            <h4>Mazo</h4>
+            <h3>Mazo</h3>
             <div>
                 <p>Cada Jugador cuenta con un mazo de 30 cartas. Hasta el momento sólo hay dos tipos de mazos: Acuático
                     y
@@ -47,12 +47,12 @@ require('../layout/_constants.php');
                     que tenga la opción de elegir el mazo, al otro jugador se le asignará el restante.</p>
             </div>
 
-            <h4>Mano</h4>
+            <h3>Mano</h3>
             <div>
                 <p>Es el área dónde se ubican las cartas que robes del mazo antes de ponerlas en juego.</p>
             </div>
 
-            <h4>Reserva de Alimentos</h4>
+            <h3>Reserva de Alimentos</h3>
             <div>
                 <p>La reserva de alimentos contiene a todos los alimentos que has puesto en juego. Cuando consumes un
                     alimento
@@ -61,7 +61,7 @@ require('../layout/_constants.php');
                     este turno a la zona de Alimentos Consumidos.</p>
             </div>
 
-            <h4>Alimentos Consumidos</h4>
+            <h3>Alimentos Consumidos</h3>
             <div>
                 <p>La zona de Alimentos Consumidos es el lugar donde se ubican los alimentos que has consumido para
                     bajar
@@ -76,7 +76,7 @@ require('../layout/_constants.php');
                     turno.</p>
             </div>
 
-            <h4>Línea de Reposo</h4>
+            <h3>Línea de Reposo</h3>
             <div>
                 <p>
                     Es el lugar a donde se bajan las cartas de Animal. Si una carta está en esta zona puedes declararla
@@ -87,7 +87,7 @@ require('../layout/_constants.php');
                 </p>
             </div>
 
-            <h4>Línea de Batalla</h4>
+            <h3>Línea de Batalla</h3>
             <div>
                 <p>Es el lugar donde se ubican los Animales declarados atacantes o defensores y donde se efectúa el
                     cálculo
@@ -98,7 +98,7 @@ require('../layout/_constants.php');
                     turno.</p>
             </div>
 
-            <h4>Cementerio</h4>
+            <h3>Cementerio</h3>
             <div>
                 <p>Es la zona donde van las cartas cuando son destruidas, ya sea por efectos de cartas, activar
                     habilidades
@@ -106,7 +106,7 @@ require('../layout/_constants.php');
                     por daño de combate.</p>
             </div>
 
-            <h4>Línea de Apoyo</h4>
+            <h3>Línea de Apoyo</h3>
             <div>
                 <p>Es la zona donde pones el Habitat que juegas y de dónde activarás los efectos de cada uno de ellos en
                     caso de
@@ -121,21 +121,21 @@ require('../layout/_constants.php');
                     cartas del juego.</p>
             </div>
 
-            <h4>Alimento</h4>
+            <h3>Alimento</h3>
             <div>
                 <p>Los alimentos sirven como "moneda" en el juego, se utilizan para "pagar" el coste de los demás tipos
                     de
                     cartas y de esta manera ponerlos en juego.</p>
             </div>
 
-            <h4>Animal</h4>
+            <h3>Animal</h3>
             <div>
                 <p>Los animales son las cartas que se utilizan en la batalla. Todos los animales poseen un coste y un
                     daño.
                     Algunos de ellos tienen un efecto.</p>
             </div>
 
-            <h4>Habilidad</h4>
+            <h3>Habilidad</h3>
             <div>
                 <p>Las habilidades son cartas que se juegan desde la mano del jugador pagando su coste en alimentos.
                     Estas
@@ -144,7 +144,7 @@ require('../layout/_constants.php');
                     luego de utilizadas, se destruyen.</p>
             </div>
 
-            <h4>Habitat</h4>
+            <h3>Habitat</h3>
             <div>
                 <p>Los habitats son cartas similares a las habilidades pero que se mantienen en juego indefinidamente.
                 </p>
@@ -152,26 +152,26 @@ require('../layout/_constants.php');
 
             <h3>Turnos</h3>
 
-            <h4>1° Turno</h4>
+            <h3>1° Turno</h3>
             <div>
                 <p>Cada jugador robará de su mazo un total de 4 cartas para iniciar la partida.</p>
             </div>
 
-            <h4>2° Turno</h4>
+            <h3>2° Turno</h3>
             <div>
                 <p>En caso de tener la posibilidad, el jugador podrá ya sea bajar una carta al tablero de juego desde su
                     mano o
                     bien activar un efecto de una habilidad.</p>
             </div>
 
-            <h4>3° Turno en Adelante</h4>
+            <h3>3° Turno en Adelante</h3>
             <div>
                 <p>A partir del tercer turno, el jugador podrá ver su mano, bajar una carta, atacar al enemigo, activar
                     un
                     efecto o ver el tablero de juego.</p>
             </div>
 
-            <h4>Fin de Turno</h4>
+            <h3>Fin de Turno</h3>
             <div>
                 <p>Al final de cada turno el jugador robará una carta de su mazo.</p>
             </div>

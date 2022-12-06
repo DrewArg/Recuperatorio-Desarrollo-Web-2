@@ -52,34 +52,25 @@ if (isset($_POST['submit'])) {
 <head>
     <?php require('../layout/_metaTags.php') ?>
     <?php require('../layout/_styleSheet.php') ?>
-    <title> Contacto </title>
+    <title>Contacto</title>
 </head>
 
-<body>
+<body class="body">
     <?php require('../layout/_header.php') ?>
 
     <main>
-        <div class="container">
-
-            <h1>Contacto</h1>
-
-            <ul>
-                <?php foreach ($errores as $error) : ?>
-                    <li class="text text-danger"> <?php echo $error ?> </li>
-                <?php endforeach ?>
-            </ul>
-
+        <div class="contacto">
+            <h1>Contactanos</h1>
+            <h2>¿Querés comprar?</h2>
             <form action="formulario.php" method="post">
 
-                <div class="form-group mb-3">
-                    <label for="nombre"> Nombre </label>
-                    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese su nombre" value="<?php echo $nombre ?>">
-                </div>
 
-                <div class="form-group mb-3">
-                    <label for="email"> Email </label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese su correo electrónico" value="<?php echo $email ?>">
-                </div>
+                <label for="nombreCompra"> Nombre </label>
+                <input type="text" name="nombreCompra" id="nombreCompra" placeholder="Ingrese su nombre" value="<?php echo $nombre ?>">
+
+                <label for="emailCompra"> Email </label>
+                <input type="email" name="emailCompra" id="emailCompra" placeholder="Ingrese su correo electrónico" value="<?php echo $email ?>">
+
 
                 <div class="form-group mb-3">
                     <label for="edad"> Edad </label>
@@ -106,7 +97,7 @@ if (isset($_POST['submit'])) {
 
                 <button type="submit" class="btn btn-primary" name="submit"> Enviar </button>
             </form>
-
+            <h2>¿Querés preguntar algo?</h2>
         </div>
     </main>
     <?php require('../layout/_footer.php') ?>

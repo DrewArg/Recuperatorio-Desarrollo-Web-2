@@ -65,7 +65,10 @@ function goToError404()
                             <ul>
                                 <li>Daño: <?php echo $currentCard['dano'] ?></li>
                                 <li>Alimentos: <?php echo $currentCard['alimentos'] ?></li>
-                                <li>Efecto:<?php echo $currentCard['efecto'] ?></li>
+                                <?php if ($currentCard['efecto'] != "") : ?>
+                                    <li>Efecto:<?php echo $currentCard['efecto'] ?></li>
+                                <?php endif ?>
+
                             </ul>
                         <?php elseif ($currentCard['tipo'] == "Habilidad") : ?>
                             <div class="contenedorDescripcion">
