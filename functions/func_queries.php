@@ -18,19 +18,20 @@ try {
 //     return $categorias;
 // }
 
-// function addProducto(PDO $conexion, $data)
-// {
-//     $consulta = $conexion->prepare('
-//         INSERT INTO productos(nombre, descripcion, precio, categoria_id, imagen)
-//         VALUES(:nombre, :descripcion, :precio, :categoria_id, :imagen)
-//     ');
-//     $consulta->bindValue(':nombre', $data['nombre']);
-//     $consulta->bindValue(':descripcion', $data['descripcion']);
-//     $consulta->bindValue(':precio', $data['precio']);
-//     $consulta->bindValue(':categoria_id', $data['categoria_id']);
-//     $consulta->bindValue(':imagen', $data['imagen']);
-//     $consulta->execute();
-// }
+function addOrder(PDO $connection, $data)
+{
+    $query = $connection->prepare('
+        INSERT INTO ordenes(nombre, email, cartas, copias, preguntas)
+        VALUES(:nombre, :email, :cartas, :copias, :preguntas)
+    ');
+
+    $query->bindValue(':nombre', $data['nombre']);
+    $query->bindValue(':email', $data['email']);
+    $query->bindValue(':cartas', $data['cartas']);
+    $query->bindValue(':copias', $data['copias']);
+    $query->bindValue(':preguntas', $data['preguntas']);
+    $query->execute();
+}
 
 function getCards(PDO $connection)
 {
