@@ -71,15 +71,28 @@ a {
     & textarea {
         align-self: center;
     }
+}
 
-    & button {
-        margin: 1rem;
-        align-self: center;
-        padding: .5rem;
+button {
+    margin: 1rem;
+    align-self: center;
+    padding: 0.5rem;
 
-        &:hover{
-            background-color: rgb(223, 240, 197);
-            color: black;
-        }
+    &:hover {
+        background-color: rgb(223, 240, 197);
+        color: black;
+        cursor: pointer;
+    }
+}
+
+input[type="submit"] {
+    margin: 1rem;
+    align-self: center;
+    padding: 0.5rem;
+
+    &:hover {
+        background-color: rgb(223, 240, 197);
+        color: black;
+        cursor: pointer;
     }
 }

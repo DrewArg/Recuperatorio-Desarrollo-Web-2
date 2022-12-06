@@ -2010,12 +2010,25 @@ a {
 #awesome__form textarea {
   align-self: center;
 }
-#awesome__form button {
+
+button {
   margin: 1rem;
   align-self: center;
   padding: 0.5rem;
 }
-#awesome__form button:hover {
+button:hover {
   background-color: rgb(223, 240, 197);
   color: black;
+  cursor: pointer;
+}
+
+input[type=submit] {
+  margin: 1rem;
+  align-self: center;
+  padding: 0.5rem;
+}
+input[type=submit]:hover {
+  background-color: rgb(223, 240, 197);
+  color: black;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

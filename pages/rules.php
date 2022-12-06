@@ -15,7 +15,7 @@ require('../layout/_constants.php');
 
 <?php require('../layout/_header.php') ?>
 
-    <main>
+    <main class="main">
         <div class="reglamento">
             <h1>Reglamento</h1>
             <h2>Notas Versión Actual</h2>
