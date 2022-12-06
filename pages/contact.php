@@ -66,7 +66,7 @@ if (isset($_POST['submit'])) {
 <body class="body">
     <?php require('../layout/_header.php') ?>
 
-    <main>
+    <main class="main">
         <h1 id="tituloCambiante">Contactanos</h1>
         <p class=" titulo__subtitulo">Dejanos tu informacion de contacto y tu pedido así nos contactamos con vos.</p>
         <form id="awesome__form" method="post">
@@ -76,17 +76,19 @@ if (isset($_POST['submit'])) {
             <label for="compraEmail">Email</label>
             <input required type="email" name="compraEmail" id="compraEmail" placeholder="Ingrese su correo electrónico" value="<?php echo $compraEmail ?>">
 
-            <label for="requestedCards[]">¿Qué cartas te gustaría comprar?</label>
+            <label for="requestedCards[]" class="form__pregunta">¿Qué cartas te gustaría comprar?</label>
             <?php if ($cards) : ?>
                 <?php foreach ($cards as $card) : ?>
-                    <input type="checkbox" name="requestedCards[]" value="<?php echo $card['nombre'] ?>" />[<?php echo $card['tipo'] ?>]<?php echo $card['nombre'] ?>: AR$<?php echo $card['precio'] ?><br />
+                    <div class="checkContainer">
+                        <input type="checkbox" class="form__checkmarck" name="requestedCards[]" value="<?php echo $card['nombre'] ?>" />[<?php echo $card['tipo'] ?>]<?php echo $card['nombre'] ?>: AR$<?php echo $card['precio'] ?>
+                    </div>
                 <?php endforeach ?>
-                <label for="masCartas">¿Querés más de una copia de alguna carta?</label>
+                <label for="masCartas" class="form__pregunta">¿Querés más de una copia de alguna carta?</label>
                 <textarea name="masCartas" id="masCartas" rows="3" placeholder="indicanos cual.." value="<?php echo $compraCopias ?>"></textarea>
             <?php else : ?>
                 <p>Oops parece que en este momento no tenemos ninguna carta para vender.</p>
             <?php endif ?>
-            <label for="otraPregunta">¿Tenés alguna otra pregunta?</label>
+            <label for="otraPregunta" class="form__pregunta">¿Tenés alguna otra pregunta?</label>
             <textarea name="otraPregunta" id="otraPregunta" rows="3" placeholder="indicanos cual.."></textarea>
 
             <button type="submit" name="submit">¡Quiero mis cartas!</button>

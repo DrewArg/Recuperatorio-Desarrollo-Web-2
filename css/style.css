@@ -1970,9 +1970,52 @@ a {
   margin-top: 0rem;
 }
 
+.checkContainer {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: left;
+  text-align: left;
+}
+
+.form__pregunta {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.form__checkmarck {
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.main {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 #awesome__form {
   display: flex;
   flex-direction: column;
   margin: auto;
   text-align: center;
+}
+#awesome__form input[type=text] {
+  align-self: center;
+}
+#awesome__form input[type=email] {
+  align-self: center;
+}
+#awesome__form textarea {
+  align-self: center;
+}
+#awesome__form button {
+  margin: 1rem;
+  align-self: center;
+  padding: 0.5rem;
+}
+#awesome__form button:hover {
+  background-color: rgb(223, 240, 197);
+  color: black;
 }/*# sourceMappingURL=style.css.map */
