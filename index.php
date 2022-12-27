@@ -28,17 +28,30 @@ function goToShop()
 
 <body class="body">
     <header>
-        <nav class="topNav">
-            <a href="<?php echo BASE_URL; ?>/index.php">Home</a>
-            <a href="<?php echo BASE_URL; ?>/pages/shop.php">Tienda</a>
-            <a href="<?php echo BASE_URL; ?>/pages/rules.php">Reglamento</a>
-            <a href="<?php echo BASE_URL; ?>/pages/contact.php">Contacto</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="<?php echo BASE_URL; ?>/index.php">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo BASE_URL; ?>/pages/shop.php">Tienda</a>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo BASE_URL; ?>/pages/rules.php">Reglamento</a>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo BASE_URL; ?>/pages/contact.php">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
         <div class="titulo" id="tituloHome">
-            <h1 class="titulo__h2">Recuperatorio TP N°1 y TP N°2 </h1>
+            <h1 class="titulo__h2">Final</h1>
             <div class="ficha__index">
                 <p>
                     Alumno: Andrés Ezequiel Fabbiano

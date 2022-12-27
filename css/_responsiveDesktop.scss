@@ -139,7 +139,7 @@
             display: flex;
             flex-direction: column;
             width: 300px;
-            height: 400px;
+            height: 450px;
             align-items: center;
             justify-content: center;
             border-radius: 10px;
@@ -150,7 +150,7 @@
             display: flex;
             flex-direction: column;
             width: 300px;
-            height: 400px;
+            height: 450px;
             background-color: $Cartas-Primero;
             color: $Font-Principal;
             border-radius: 10px;
@@ -167,7 +167,7 @@
             display: flex;
             flex-direction: column;
             width: 300px;
-            height: 400px;
+            height: 450px;
             background-color: $Cartas-Secundario;
             color: $Font-Principal;
             border-radius: 10px;
@@ -184,7 +184,7 @@
             display: flex;
             flex-direction: column;
             width: 300px;
-            height: 400px;
+            height: 450px;
             background-color: $Cartas-Terciario;
             color: $Font-Principal;
             border-radius: 10px;
@@ -201,7 +201,7 @@
             display: flex;
             flex-direction: column;
             width: 300px;
-            height: 400px;
+            height: 450px;
             background-color: $Cartas-Cuarto;
             color: $Font-Principal;
             border-radius: 10px;
@@ -242,7 +242,7 @@
 
         &__inferior {
             width: 300px;
-            height: 120px;
+            height: 170px;
             padding-left: 1.3rem;
             padding-right: 1.3rem;
             padding-top: 0.5rem;
@@ -303,8 +303,8 @@
 }
 
 .topNav {
-    background-color: $Color-Secundario;
 
+    background-color: $Color-Secundario;
     overflow: hidden;
     display: flex;
     flex-direction: row;
